@@ -1,0 +1,19 @@
+{
+  "name": "photosnap",
+  "version": "1.0.0",
+  "description": "A photographer's Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godswilldev/PhotoSnap.git"
+  },
+  "author": "Greg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godswilldev/PhotoSnap/issues"
+  },
+  "homepage": "https://github.com/Godswilldev/PhotoSnap#readme"
+}
