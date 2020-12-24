@@ -1,0 +1,143 @@
+.heading1 {
+    background-color: $color-black;
+    grid-column: 1/6;
+
+    .heading__primary{
+        margin-bottom: 2rem;
+    }
+
+    .arrow__button{
+        margin-top: 2rem;
+        svg{
+            margin-left: 1rem;
+        }
+    }
+
+    &__text {
+        color: $color-white;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8rem;
+
+        .btn {
+            color: $color-white;
+
+        }
+
+        @include respond(phone){
+            padding: 0 3rem;
+        }
+    }
+
+
+    @include respond(land) {
+        grid-column: 1/8;
+    }
+
+    @include respond(tab-port) {
+        grid-column: 1/8;
+    }
+
+    @include respond(phone) {
+        grid-column: 1/-1;
+        order: 2;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.heading2 {
+    // background-color: greenyellow;
+    grid-column: 8/-1;
+
+    .heading__primary{
+        margin-bottom: 2rem;
+    }
+
+    .arrow__button{
+        margin-top: 2rem;
+        svg{
+            margin-left: 1rem;
+        }
+    }
+
+    &__text {
+        color: $color-black;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8rem;
+
+
+        .btn {
+            color: $color-black;
+        }
+        @include respond(phone){
+            padding: 0 3rem;
+        }
+    }
+
+    @include respond(land) {
+        grid-column: 6/-1;
+    }
+
+    @include respond(tab-port) {
+        grid-column: 6/-1;
+    }
+
+    @include respond(phone) {
+        grid-column: 1/-1;
+        order: 4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.heading3 {
+    // background-color: red;
+    grid-column: 1/6;
+
+    .heading__primary{
+        margin-bottom: 2rem;
+    }
+
+    .arrow__button{
+        margin-top: 2rem;
+        svg{
+            margin-left: 1rem;
+        }
+    }
+
+    @include respond(land) {
+        grid-column: 1/8;
+    }
+
+    @include respond(tab-port) {
+        grid-column: 1/8;
+    }
+
+    @include respond(phone) {
+        grid-column: 1/-1;
+        order: 6;
+    }
+
+}

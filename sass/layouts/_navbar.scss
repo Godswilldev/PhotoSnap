@@ -1,0 +1,61 @@
+.nav {
+    grid-column: 1 / -1;
+    order: 0;
+    display: grid;
+    
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+        }
+
+
+    }
+
+    &__logo {}
+
+    &__item {
+        display: flex;
+        font-weight: 600;
+
+        li {
+            &:not(:last-child){
+                margin-right: 5rem;
+            }
+
+            @include respond(tab-port) {
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    &__items {
+
+        a {
+            text-decoration: none;
+            color: $color-black;
+            text-transform: uppercase;
+
+        }
+
+        button {
+
+            a {
+                color: $color-white;
+                font-weight: 500;
+
+                &:hover {
+                    color: $color-black;
+                }
+            }
+        }
+    }
+
+
+}

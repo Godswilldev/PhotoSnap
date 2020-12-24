@@ -30,11 +30,6 @@
         text-decoration: none;
         transition: .3s all;
 
-        &::after {
-            content: "\27F6";
-            color: red;
-            font-size: 3rem;
-        }
         &:hover {
             text-decoration: underline;
         }
