@@ -369,7 +369,8 @@ body {
 .nav {
   grid-column: 1 / -1;
   order: 0;
-  display: grid; }
+  display: grid;
+  position: relative; }
   .nav__links {
     display: flex;
     justify-content: space-around;
@@ -393,6 +394,43 @@ body {
     font-weight: 500; }
     .nav__items button a:hover {
       color: #000; }
+  @media only screen and (max-width: 56.25em) {
+    .nav .nav__links {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      height: 40vh;
+      width: 95%;
+      margin: 0 auto;
+      transition: all 1s ease-in-out;
+      display: none; }
+      .nav .nav__links .nav__item {
+        display: block; }
+        .nav .nav__links .nav__item li:not(:last-child) {
+          margin-bottom: 2rem; }
+    .nav .nav__logo {
+      align-self: start; }
+    .nav .open {
+      display: flex;
+      transition: 1s all;
+      pointer-events: all; }
+    .nav .hamburger {
+      z-index: 100;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      transition: .5s all; }
+      .nav .hamburger .line {
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        margin: 5px; }
+      .nav .hamburger .line1 {
+        transform: translateY(4px) rotate(-45deg); }
+      .nav .hamburger .line2 {
+        transform: translateY(-4px) rotate(45deg); } }
 
 .heading1 {
   background-color: #000;

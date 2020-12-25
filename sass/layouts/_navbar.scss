@@ -2,7 +2,8 @@
     grid-column: 1 / -1;
     order: 0;
     display: grid;
-    
+    position: relative;
+
     &__links {
         display: flex;
         justify-content: space-around;
@@ -10,25 +11,26 @@
 
         li {
             list-style: none;
-
         }
 
 
     }
 
-    &__logo {}
+    // &__logo {
+    //     display: block;
+    // }
 
     &__item {
         display: flex;
         font-weight: 600;
 
         li {
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-right: 5rem;
             }
 
             @include respond(tab-port) {
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-right: 2rem;
                 }
             }
@@ -58,4 +60,81 @@
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @include respond(tab-port) {
+
+        .nav__links {
+            // position: fixed;
+            display: flex;
+            flex-direction: column;
+            background-color: $color-white;
+            height: 40vh;
+            width: 95%;
+            margin: 0 auto;
+            transition: all 1s ease-in-out;
+            display: none;
+
+            .nav__item {
+                display: block;
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                }
+            }
+        }
+
+        .nav__logo {
+            // display: block;
+            // z-index: 999;
+            align-self: start;
+        }
+
+       
+        .open {
+            display: flex;
+            transition: 1s all;
+            pointer-events: all;
+        }
+
+        .hamburger {
+            z-index: 100;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            transition: .5s all;
+
+            .line {
+                width: 30px;
+                height: 2px;
+                background-color: $color-black;
+                margin: 5px;
+            }
+
+            .line1 {
+                transform: translateY(4px) rotate(-45deg);
+                // display: none;
+            }
+
+            .line2 {
+                transform: translateY(-4px) rotate(45deg);
+            }
+        }
+    }
 }
