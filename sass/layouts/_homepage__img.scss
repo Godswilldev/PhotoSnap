@@ -1,0 +1,75 @@
+
+.homePage__img1 {
+    background-color: rebeccapurple;
+    grid-column: 6/-1;
+
+    @include respond(land) {
+        grid-column: 8/-1;
+    }
+
+    @include respond(tab-port) {
+        grid-column: 8/-1;
+    }
+
+    @include respond(phone) {
+        grid-column: 1/-1;
+        order: 1;
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.homePage__img2 {
+    // background-color: #61e0b0;
+    grid-column: 1/8;
+
+    @include respond(land) {
+        grid-column: 1/6;
+    }
+
+    @include respond(tab-port) {
+        grid-column: 1/6;
+    }
+
+    @include respond(phone) {
+        grid-column: 1/-1;
+        order: 3;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+
+
+
+.homePage__img3 {
+    background-color: rebeccapurple;
+    grid-column: 6/-1;
+
+    @include respond(land) {
+        grid-column: 8/-1;
+    }
+
+    @include respond(tab-port) {
+        grid-column: 8/-1;
+    }
+
+    @include respond(phone) {
+        grid-column: 1/-1;
+        order: 5;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

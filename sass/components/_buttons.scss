@@ -51,4 +51,19 @@
             color: $color-white;
         }
     }
+
+
+    &--4 {
+        border: none;
+        color: $color-white;
+        background: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+        transition: .3s all;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

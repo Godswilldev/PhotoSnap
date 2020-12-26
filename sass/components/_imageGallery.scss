@@ -18,7 +18,8 @@
     }
 
     &--1 {
-        background-image: url(../assets/stories/desktop/mountains.jpg);
+        background-repeat: no-repeat;
+        background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/mountains.jpg);
         color: $color-white;
         display: flex;
         flex-direction: column;
@@ -57,7 +58,7 @@
     }
 
     &--2 {
-        background-image: url(../assets/stories/desktop/cityscapes.jpg);
+        background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)),  url(../assets/stories/desktop/cityscapes.jpg);
         color: $color-white;
         display: flex;
         flex-direction: column;
@@ -96,7 +97,7 @@
     }
 
     &--3 {
-        background-image: url(../assets/stories/desktop/18-days-voyage.jpg);
+        background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)),  url(../assets/stories/desktop/18-days-voyage.jpg);
         color: $color-white;
         display: flex;
         flex-direction: column;
@@ -134,7 +135,7 @@
     }
 
     &--4 {
-        background-image: url(../assets/stories/desktop/architecturals.jpg);
+        background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/architecturals.jpg);
         color: $color-white;
         display: flex;
         flex-direction: column;
