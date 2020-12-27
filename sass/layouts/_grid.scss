@@ -34,3 +34,10 @@
     grid-template-columns: repeat(5, 1fr);
 
 }
+
+
+.pricing__body{
+    display: grid;
+    grid-template-rows: 7.2rem 49rem 70rem 80rem 30rem 25rem;
+    grid-template-columns: repeat(6, 1fr);
+}

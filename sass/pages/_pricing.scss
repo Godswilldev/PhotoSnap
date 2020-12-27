@@ -1,7 +1,8 @@
-.features__body{
+.pricing__body{
+
 
     .nav{
-        grid-column: 1/-1
+        grid-column: 1/-1;
     }
 
     .heading3{
@@ -10,8 +11,8 @@
         color: $color-white;
 
         p{
-            line-height: 1.6;
-            letter-spacing: .5rem;
+            line-height: 1.5;
+            letter-spacing: .3rem;
         }
     }
 
@@ -19,32 +20,14 @@
         grid-column: 3/-1;
     }
 
-
-    .section__features{
+    .section__plans{
         grid-column: 1/-1;
-        // background-color: yellow;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        justify-items: center;
-        grid-gap: 3rem;
-        padding: 0 5rem;
-        text-align: center;
+        background-color: $color-primary-1;
+    }
 
-        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-        grid-template-rows: repeat(2, 23.6rem);
-
-
-
-
-
-        .section__responsive--1{
-
-            & > *{
-                margin-bottom: 2rem;
-            }
-        }
+    .section__compare{
+        grid-column: 1/-1;
+        background-color: $color-primary-2;
     }
 
     .beta{
@@ -62,6 +45,5 @@
 
     .footer{
         grid-column: 1/-1;
-
     }
 }

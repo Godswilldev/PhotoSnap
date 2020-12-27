@@ -470,6 +470,11 @@ body {
   grid-template-rows: 7.2rem 49rem 75rem 30rem 25rem;
   grid-template-columns: repeat(5, 1fr); }
 
+.pricing__body {
+  display: grid;
+  grid-template-rows: 7.2rem 49rem 70rem 80rem 30rem 25rem;
+  grid-template-columns: repeat(6, 1fr); }
+
 .nav {
   grid-column: 1 / -1;
   order: 0;
@@ -782,4 +787,41 @@ body {
   padding: 0 5rem; }
 
 .features__body .footer {
+  grid-column: 1/-1; }
+
+.pricing__body .nav {
+  grid-column: 1/-1; }
+
+.pricing__body .heading3 {
+  grid-column: 1/ span 2;
+  background-color: #000;
+  color: #fff; }
+  .pricing__body .heading3 p {
+    line-height: 1.5;
+    letter-spacing: .3rem; }
+
+.pricing__body .homePage__img3 {
+  grid-column: 3/-1; }
+
+.pricing__body .section__plans {
+  grid-column: 1/-1;
+  background-color: #ffc593; }
+
+.pricing__body .section__compare {
+  grid-column: 1/-1;
+  background-color: #bc7198; }
+
+.pricing__body .beta {
+  grid-column: 1/-1;
+  color: #fff;
+  background-image: url(../assets/shared/desktop/bg-beta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem; }
+
+.pricing__body .footer {
   grid-column: 1/-1; }
