@@ -25,3 +25,12 @@
     grid-template-rows: 7.2rem 65rem 200rem 1fr;
     grid-template-columns: repeat(4, 1fr);
 }
+
+
+
+.features__body{
+    display: grid;
+    grid-template-rows: 7.2rem 49rem 75rem 30rem 25rem;
+    grid-template-columns: repeat(5, 1fr);
+
+}

@@ -1,4 +1,3 @@
-
 .stories__header {
     color: $color-white;
     background-image: url(../assets/stories/desktop/moon-of-appalacia.jpg);
@@ -82,44 +81,54 @@
         }
     }
 
-    .img__gallery{
+    .img__gallery {
 
         &--5 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/world-tour.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/world-tour.jpg);
         }
+
         &--6 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/unforeseen-corners.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/unforeseen-corners.jpg);
         }
+
         &--7 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/world-tour.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/world-tour.jpg);
         }
+
         &--8 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/trip-to-nowhere.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/trip-to-nowhere.jpg);
         }
+
         &--9 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/rage-of-the-sea.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/rage-of-the-sea.jpg);
         }
+
         &--10 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/running-free.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/running-free.jpg);
         }
+
         &--11 {
-            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)),url(../assets/stories/desktop/behind-the-waves.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/behind-the-waves.jpg);
         }
+
         &--12 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/calm-waters.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/calm-waters.jpg);
         }
+
         &--13 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/milky-way.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/milky-way.jpg);
         }
-        
+
         &--14 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/dark-forest.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/dark-forest.jpg);
         }
+
         &--15 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/somwarpet.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/somwarpet.jpg);
         }
+
         &--16 {
-            background-image:linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/land-of-dreams.jpg);
+            background-image: linear-gradient(to right bottom, rgba(black, .3), rgba(black, .3)), url(../assets/stories/desktop/land-of-dreams.jpg);
         }
     }
 }

@@ -465,6 +465,11 @@ body {
   grid-template-rows: 7.2rem 65rem 200rem 1fr;
   grid-template-columns: repeat(4, 1fr); }
 
+.features__body {
+  display: grid;
+  grid-template-rows: 7.2rem 49rem 75rem 30rem 25rem;
+  grid-template-columns: repeat(5, 1fr); }
+
 .nav {
   grid-column: 1 / -1;
   order: 0;
@@ -734,3 +739,47 @@ body {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/stories/desktop/somwarpet.jpg); }
   .stories__img__gallery .img__gallery--16 {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/stories/desktop/land-of-dreams.jpg); }
+
+.features__body .nav {
+  grid-column: 1/-1; }
+
+.features__body .heading3 {
+  grid-column: 1/ span 2;
+  background-color: #000;
+  color: #fff; }
+  .features__body .heading3 p {
+    line-height: 1.6;
+    letter-spacing: .5rem; }
+
+.features__body .homePage__img3 {
+  grid-column: 3/-1; }
+
+.features__body .section__features {
+  grid-column: 1/-1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 3rem;
+  padding: 0 5rem;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-rows: repeat(2, 23.6rem); }
+  .features__body .section__features .section__responsive--1 > * {
+    margin-bottom: 2rem; }
+
+.features__body .beta {
+  grid-column: 1/-1;
+  color: #fff;
+  background-image: url(../assets/shared/desktop/bg-beta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem; }
+
+.features__body .footer {
+  grid-column: 1/-1; }
