@@ -22,7 +22,7 @@
 
 .stories__body {
     display: grid;
-    grid-template-rows: 7.2rem 65rem 200rem 1fr;
+    grid-template-rows: 7.2rem 65rem 1fr min-content;
     grid-template-columns: repeat(4, 1fr);
 }
 
