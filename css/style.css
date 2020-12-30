@@ -804,12 +804,7 @@ body {
   grid-column: 3/-1; }
 
 .pricing__body .section__plans {
-  grid-column: 1/-1;
-  background-color: #ffc593; }
-
-.pricing__body .section__compare {
-  grid-column: 1/-1;
-  background-color: #bc7198; }
+  grid-column: 1/-1; }
 
 .pricing__body .beta {
   grid-column: 1/-1;
@@ -825,3 +820,55 @@ body {
 
 .pricing__body .footer {
   grid-column: 1/-1; }
+
+.section__plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  text-align: center; }
+  .cards .card {
+    padding: 0 3rem;
+    background-color: #dfdfdf;
+    width: 35rem;
+    height: 40.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3); }
+    .cards .card > * {
+      margin-bottom: 2.5rem; }
+    .cards .card .btn {
+      align-self: center;
+      padding: 1.2rem 10rem; }
+      .cards .card .btn a {
+        text-decoration: none;
+        color: #fff; }
+    .cards .card--1 {
+      align-self: center; }
+    .cards .card--2 {
+      background-color: #000;
+      color: #fff;
+      height: 47rem; }
+      .cards .card--2 .btn a {
+        color: #000; }
+    .cards .card--3 {
+      align-self: center; }
+
+.section__compare {
+  grid-column: 1/-1;
+  display: grid;
+  background-image: url(../assets/pricing/desktop/compare-desktop.png);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 31.25em) {
+    .section__compare {
+      background-image: url(../assets/pricing/mobile/compare-mobile); } }

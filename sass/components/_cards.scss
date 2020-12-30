@@ -1,0 +1,62 @@
+.section__plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    text-align: center;
+    
+
+    .card {
+        padding:0 3rem;
+        background-color: $color-light-gray;
+        width: 35rem;
+        height: 40.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 1rem 1rem 1rem rgba($color-black,.3);
+
+        & > *{
+            margin-bottom: 2.5rem;
+        }
+
+        .btn {
+            align-self: center;
+            padding: 1.2rem 10rem;
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+
+        &--1 {
+            align-self: center;
+
+        }
+
+        &--2 {
+            background-color: $color-black;
+            color: $color-white;
+            height: 47rem;
+
+            .btn {
+
+                a {
+                    color: $color-black;
+                }
+            }
+
+        }
+
+        &--3 {
+            align-self: center;
+        }
+    }
+}

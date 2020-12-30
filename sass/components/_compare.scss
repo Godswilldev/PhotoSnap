@@ -1,0 +1,13 @@
+.section__compare{
+    grid-column: 1/-1;
+    display: grid;
+    background-image: url(../assets/pricing/desktop/compare-desktop.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    @include respond(small-phone){
+        background-image: url(../assets/pricing/mobile/compare-mobile);
+    }
+}
