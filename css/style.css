@@ -12,7 +12,6 @@ $breakpoint arguement choices:
 - tab-land
 - big-desktop
 
-ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
@@ -298,24 +297,24 @@ body {
     @media only screen and (max-width: 37.5em) {
       .footer__logo div {
         margin: 3rem 0; } }
-    .footer__logo div a:not(:last-child) {
+    .footer__logo div img:not(:last-child) {
       margin-right: 1.5rem; }
-  @media only screen and (max-width: 37.5em) {
-    .footer__links {
-      text-align: center; } }
-  .footer__links a {
-    text-decoration: none;
-    color: #fff; }
-    .footer__links a:hover {
-      opacity: .5; }
-  .footer__links li {
-    list-style: none; }
-    @media only screen and (max-width: 37.5em) {
-      .footer__links li {
-        margin-bottom: 3rem; } }
-    .footer__links li:not(:last-child) {
-      margin-bottom: 1rem; }
+  .footer__links {
+    font-size: 2.5rem; }
+    .footer__links a {
+      text-decoration: none;
+      color: #fff; }
+      .footer__links a:hover {
+        opacity: .5; }
+    .footer__links li {
+      list-style: none; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__links li {
+          margin-bottom: 3rem; } }
+      .footer__links li:not(:last-child) {
+        margin-bottom: 1rem; }
   .footer__copyright {
+    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -323,11 +322,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .footer__copyright p {
         margin: 3rem auto; } }
-    .footer__copyright p br {
-      display: none; }
-      @media only screen and (max-width: 37.5em) {
-        .footer__copyright p br {
-          display: inline; } }
     .footer__copyright div button {
       color: #fff; }
 
@@ -336,24 +330,21 @@ body {
   order: 7;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
-  @media only screen and (max-width: 56.25em) {
-    .img__gallery {
-      grid-template-rows: repeat(2, 27.1rem); } }
-  @media only screen and (max-width: 31.25em) {
-    .img__gallery {
-      grid-template-rows: repeat(4, 27.1rem); } }
   .img__gallery img {
     width: 100%;
     height: 100%; }
   .img__gallery--1 {
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/stories/desktop/mountains.jpg);
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: end;
     transition: .3s all; }
-    .img__gallery--1 h3, .img__gallery--1 p {
+    .img__gallery--1 h3,
+    .img__gallery--1 p {
       margin-left: 3rem;
       margin-bottom: .5rem; }
     .img__gallery--1 hr {
@@ -376,8 +367,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transition: .3s all; }
-    .img__gallery--2 h3, .img__gallery--2 p {
+    .img__gallery--2 h3,
+    .img__gallery--2 p {
       margin-left: 3rem;
       margin-bottom: .5rem; }
     .img__gallery--2 hr {
@@ -400,8 +395,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transition: .3s all; }
-    .img__gallery--3 h3, .img__gallery--3 p {
+    .img__gallery--3 h3,
+    .img__gallery--3 p {
       margin-left: 3rem;
       margin-bottom: .5rem; }
     .img__gallery--3 hr {
@@ -424,8 +423,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transition: .3s all; }
-    .img__gallery--4 h3, .img__gallery--4 p {
+    .img__gallery--4 h3,
+    .img__gallery--4 p {
       margin-left: 3rem;
       margin-bottom: .5rem; }
     .img__gallery--4 hr {
@@ -450,15 +453,15 @@ body {
   @media only screen and (max-width: 75em) {
     .homepage__body {
       display: grid;
-      grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 40rem min-content min-content; } }
+      grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 50rem min-content min-content; } }
   @media only screen and (max-width: 56.25em) {
     .homepage__body {
       display: grid;
-      grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 1fr repeat(2, min-content); } }
+      grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 100rem repeat(2, min-content); } }
   @media only screen and (max-width: 37.5em) {
     .homepage__body {
       display: grid;
-      grid-template-rows: 7.2rem 29.4rem 41.9rem 27.1rem 41.9rem 27.1rem 41.9rem; } }
+      grid-template-rows: 7.2rem 29.4rem 41.9rem 30rem 41.9rem 30rem 41.9rem 150rem repeat(2, min-content); } }
 
 .stories__body {
   display: grid;
@@ -480,12 +483,16 @@ body {
   order: 0;
   display: grid;
   position: relative; }
+  .nav li {
+    list-style: none; }
   .nav__links {
     display: flex;
     justify-content: space-around;
     align-items: center; }
     .nav__links li {
       list-style: none; }
+  .nav__logo1 {
+    display: none; }
   .nav__item {
     display: flex;
     font-weight: 600; }
@@ -507,7 +514,9 @@ body {
     .nav .nav__links {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       background-color: #fff;
+      font-size: 3rem;
       height: 40vh;
       width: 95%;
       margin: 0 auto;
@@ -515,10 +524,13 @@ body {
       display: none; }
       .nav .nav__links .nav__item {
         display: block; }
-        .nav .nav__links .nav__item li:not(:last-child) {
+        .nav .nav__links .nav__item li {
           margin-bottom: 2rem; }
-    .nav .nav__logo {
-      align-self: start; }
+    .nav .nav__logo1 {
+      display: block;
+      margin: 3rem; }
+    .nav .nav__logo2 {
+      display: none; }
     .nav .open {
       display: flex;
       transition: 1s all;
@@ -558,6 +570,9 @@ body {
     padding: 0 8rem; }
     .heading1__text .btn {
       color: #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .heading1__text {
+        padding: 0 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading1__text {
         padding: 0 3rem; } }

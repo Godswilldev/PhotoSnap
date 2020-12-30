@@ -5,17 +5,17 @@
 
     @include respond(tab-land) {
         display: grid;
-        grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 40rem min-content min-content;
+        grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 50rem min-content min-content;
     }
 
     @include respond(tab-port) {
         display: grid;
-        grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 1fr repeat(2, min-content);
+        grid-template-rows: 7.2rem 65rem repeat(2, 60rem) 100rem repeat(2, min-content);
     }
 
     @include respond(phone) {
         display: grid;
-        grid-template-rows: 7.2rem 29.4rem 41.9rem 27.1rem 41.9rem 27.1rem 41.9rem;
+        grid-template-rows: 7.2rem 29.4rem 41.9rem 30rem 41.9rem 30rem 41.9rem 150rem repeat(2, min-content);
     }
 }
 
