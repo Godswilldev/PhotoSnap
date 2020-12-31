@@ -100,9 +100,11 @@
         background-position: center;
 
         color: $color-white;
+
+       
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         transition: .3s all;
 
         &:hover {
