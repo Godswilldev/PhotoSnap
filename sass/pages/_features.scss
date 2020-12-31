@@ -1,33 +1,51 @@
-.features__body{
+.features__body {
 
-    .nav{
-        grid-column: 1/-1
+    .nav {
+        grid-column: 1/-1;
+        order: -6;
     }
 
-    .heading3{
-        grid-column:1/ span 2 ;
+    .heading3 {
+        grid-column: 1/ span 2;
         background-color: $color-black;
         color: $color-white;
 
-        p{
-            line-height: 1.6;
-            letter-spacing: .5rem;
+        p {
+            line-height: 1.5;
+            letter-spacing: .2rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 1/span 3;
+        }
+
+        @include respond(phone) {
+            grid-column: 1/-1;
+            order: -4;
         }
     }
 
-    .homePage__img3{
+    .homePage__img3 {
         grid-column: 3/-1;
+
+        @include respond(tab-port) {
+            grid-column: 4/-1;
+        }
+
+        @include respond(phone) {
+            grid-column: 1/-1;
+            order: -5;
+        }
     }
 
 
-    .section__features{
+    .section__features {
         grid-column: 1/-1;
         // background-color: yellow;
         display: grid;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         align-content: center;
-        justify-items: center;
         grid-gap: 3rem;
         padding: 0 5rem;
         text-align: center;
@@ -35,19 +53,28 @@
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
         grid-template-rows: repeat(2, 23.6rem);
 
+        @include respond(tab-port) {
+            margin: 7rem 0;
+            grid-template-rows: 1fr;
 
+            &>* {
+                margin-top: 3rem;
+            }
+        }
 
+        @include respond(phone) {
+            grid-column: 1/-1;
+            order: -3;
+        }
 
-
-        .section__responsive--1{
-
-            & > *{
-                margin-bottom: 2rem;
+        div[class^='section__responsive-'] {
+            &>* {
+                margin-bottom: 1rem;
             }
         }
     }
 
-    .beta{
+    .beta {
         grid-column: 1/-1;
         color: $color-white;
         background-image: url(../assets/shared/desktop/bg-beta.jpg);
@@ -57,10 +84,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 5rem;
+        padding: 5rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 
-    .footer{
+    .footer {
         grid-column: 1/-1;
 
     }
