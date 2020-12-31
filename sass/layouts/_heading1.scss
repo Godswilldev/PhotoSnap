@@ -3,11 +3,17 @@
     grid-column: 1/6;
 
     .heading__primary{
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
+        @include respond(tab-land){
+            margin-bottom: 1rem;
+        }
     }
 
     .arrow__button{
         margin-top: 2rem;
+        @include respond(tab-land){
+            margin-top: 1rem;
+        }
         svg{
             margin-left: 1rem;
         }
@@ -26,7 +32,7 @@
         }
 
         @include respond(tab-land){
-            padding: 0 3rem;
+            padding: 0 1rem;
         }
 
         @include respond(tab-port){
@@ -70,10 +76,16 @@
 
     .heading__primary{
         margin-bottom: 2rem;
+        @include respond(tab-land){
+            margin-bottom: .5rem;
+        }
     }
 
     .arrow__button{
         margin-top: 2rem;
+        @include respond(tab-land){
+            margin-top: 1rem;
+        }
         svg{
             margin-left: 1rem;
         }
@@ -91,7 +103,7 @@
             color: $color-black;
         }
         @include respond(tab-land){
-            padding: 0 3rem;
+            padding: 0 1rem;
         }
         @include respond(tab-port){
             padding: 0 3rem;
@@ -132,10 +144,17 @@
 
     .heading__primary{
         margin-bottom: 2rem;
+
+        @include respond(tab-land){
+            margin-bottom: .5rem;
+        }
     }
 
     .arrow__button{
         margin-top: 2rem;
+        @include respond(tab-land){
+            margin-top: 1rem;
+        }
         svg{
             margin-left: 1rem;
         }

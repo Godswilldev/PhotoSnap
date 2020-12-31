@@ -227,7 +227,7 @@ body {
         font-size: 2.8rem; } }
   .heading__secondary {
     font-size: 2.4rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 56.25em) {
       .heading__secondary {
         font-size: 2rem; } }
   .heading__tertiary {
@@ -587,10 +587,14 @@ body {
 .heading1 {
   background-color: #000;
   grid-column: 1/6; }
-  .heading1 .heading__primary {
-    margin-bottom: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .heading1 .heading__primary {
+      margin-bottom: 1rem; } }
   .heading1 .arrow__button {
     margin-top: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .heading1 .arrow__button {
+        margin-top: 1rem; } }
     .heading1 .arrow__button svg {
       margin-left: 1rem; }
   .heading1__text {
@@ -603,7 +607,7 @@ body {
       color: #fff; }
     @media only screen and (max-width: 75em) {
       .heading1__text {
-        padding: 0 3rem; } }
+        padding: 0 1rem; } }
     @media only screen and (max-width: 56.25em) {
       .heading1__text {
         padding: 0 3rem; } }
@@ -622,8 +626,14 @@ body {
   grid-column: 8/-1; }
   .heading2 .heading__primary {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .heading2 .heading__primary {
+        margin-bottom: .5rem; } }
   .heading2 .arrow__button {
     margin-top: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .heading2 .arrow__button {
+        margin-top: 1rem; } }
     .heading2 .arrow__button svg {
       margin-left: 1rem; }
   .heading2__text {
@@ -636,7 +646,7 @@ body {
       color: #000; }
     @media only screen and (max-width: 75em) {
       .heading2__text {
-        padding: 0 3rem; } }
+        padding: 0 1rem; } }
     @media only screen and (max-width: 56.25em) {
       .heading2__text {
         padding: 0 3rem; } }
@@ -655,8 +665,14 @@ body {
   grid-column: 1/6; }
   .heading3 .heading__primary {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .heading3 .heading__primary {
+        margin-bottom: .5rem; } }
   .heading3 .arrow__button {
     margin-top: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .heading3 .arrow__button {
+        margin-top: 1rem; } }
     .heading3 .arrow__button svg {
       margin-left: 1rem; }
   @media only screen and (max-width: 56.25em) {
