@@ -341,7 +341,14 @@ body {
   grid-column: 1/-1;
   order: 7;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(1, 50rem); }
+  @media only screen and (max-width: 37.5em) {
+    .img__gallery {
+      grid-template-rows: repeat(2, 50rem); } }
+  @media only screen and (max-width: 30em) {
+    .img__gallery {
+      grid-template-rows: repeat(4, 50rem); } }
   .img__gallery img {
     width: 100%;
     height: 100%; }
@@ -439,6 +446,12 @@ body {
     background-position: center;
     background-size: cover;
     transition: .3s all; }
+    @media only screen and (max-width: 75em) {
+      .img__gallery--4 {
+        display: none; } }
+    @media only screen and (max-width: 56.25em) {
+      .img__gallery--4 {
+        display: flex; } }
     .img__gallery--4 h3,
     .img__gallery--4 p {
       margin-left: 3rem;
@@ -473,7 +486,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .homepage__body {
       display: grid;
-      grid-template-rows: 7.2rem 29.4rem 41.9rem 30rem 41.9rem 30rem 41.9rem 150rem repeat(2, min-content); } }
+      grid-template-rows: 7.2rem 35rem 41.9rem 35rem 41.9rem 35rem 41.9rem 1fr repeat(2, min-content); } }
 
 .stories__body {
   display: grid;
@@ -582,6 +595,9 @@ body {
     padding: 0 8rem; }
     .heading1__text .btn {
       color: #fff; }
+    @media only screen and (max-width: 75em) {
+      .heading1__text {
+        padding: 0 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .heading1__text {
         padding: 0 3rem; } }
@@ -612,6 +628,12 @@ body {
     padding: 0 8rem; }
     .heading2__text .btn {
       color: #000; }
+    @media only screen and (max-width: 75em) {
+      .heading2__text {
+        padding: 0 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading2__text {
+        padding: 0 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading2__text {
         padding: 0 3rem; } }
@@ -714,7 +736,8 @@ body {
     padding: 0 10rem; }
     @media only screen and (max-width: 75em) {
       .stories__header__item {
-        padding: 0 5rem; } }
+        grid-column: 1/4;
+        padding: 0 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .stories__header__item {
         grid-column: 1/4;

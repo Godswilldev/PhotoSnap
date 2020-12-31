@@ -15,7 +15,7 @@
 
     @include respond(phone) {
         display: grid;
-        grid-template-rows: 7.2rem 29.4rem 41.9rem 30rem 41.9rem 30rem 41.9rem 150rem repeat(2, min-content);
+        grid-template-rows: 7.2rem 35rem 41.9rem 35rem 41.9rem 35rem 41.9rem 1fr repeat(2, min-content);
     }
 }
 
