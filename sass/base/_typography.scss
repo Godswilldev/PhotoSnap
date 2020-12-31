@@ -4,11 +4,17 @@
     &__primary {
         font-size: 4rem;
 
+        @include respond(tab-land){
+            font-size: 2.8rem;
+        }
+
     }
 
     &__secondary {
         font-size: 2.4rem;
-
+        @include respond(tab-land){
+            font-size: 2rem;
+        }
     }
 
     &__tertiary {
