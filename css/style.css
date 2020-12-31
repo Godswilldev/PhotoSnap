@@ -758,8 +758,9 @@ body {
     padding: 0 10rem; }
     @media only screen and (max-width: 75em) {
       .stories__header__item {
+        font-size: 1.3rem;
         grid-column: 1/4;
-        padding: 0 3rem; } }
+        padding: 1rem 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .stories__header__item {
         grid-column: 1/4;

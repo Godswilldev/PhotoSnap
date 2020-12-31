@@ -17,8 +17,9 @@
 
 
         @include respond(tab-land){
+            font-size: 1.3rem;
             grid-column: 1/4;
-            padding: 0 3rem;
+            padding: 1rem 3rem;
         }
 
         @include respond(tab-port){
