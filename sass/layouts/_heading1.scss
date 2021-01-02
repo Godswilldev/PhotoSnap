@@ -9,6 +9,9 @@
             margin-bottom: 1rem;
             font-size: 2rem;
         }
+        @include respond(tab-land) {
+            font-size: 2.5rem;
+        }
     }
 
     .arrow__button {
@@ -38,6 +41,10 @@
         p {
             @include respond(tab-land) {
                 font-size: 1.2rem;
+            }
+
+            @include respond(tab-port) {
+                font-size: 1.5rem;
             }
         }
 
@@ -93,6 +100,10 @@
             margin-bottom: .5rem;
             font-size: 2rem;
         }
+
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+        }
     }
 
     .arrow__button {
@@ -117,6 +128,9 @@
         p {
             @include respond(tab-land) {
                 font-size: 1.2rem;
+            }
+            @include respond(tab-port) {
+                font-size: 1.5rem;
             }
         }
 
@@ -171,6 +185,9 @@
         @include respond(tab-land) {
             font-size: 1.2rem;
         }
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
     }
 
     .heading__primary {
@@ -179,6 +196,10 @@
         @include respond(tab-land) {
             margin-bottom: .5rem;
             font-size: 2rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 2.5rem;
         }
     }
 
