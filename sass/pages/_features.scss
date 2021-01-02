@@ -81,6 +81,8 @@
         @include respond(tab-land) {
             margin: 7rem 0;
             grid-template-rows: 1fr;
+            padding: 0 2rem;
+            font-size: 1.4rem;
 
             &>* {
                 margin-top: 3rem;

@@ -8,6 +8,11 @@
     text-align: center;
     align-items: flex-end;
 
+    @include respond(tab-land){
+        margin: 15rem 2rem;
+        font-size: 1.3rem;
+    }
+
     svg {
         margin-bottom: 3rem;
     }
@@ -15,6 +20,14 @@
     h2 {
         margin-bottom: 2rem;
         font-weight: 600;
+    }
+
+    p{
+        // @include respond(tab-land){
+        //     font-size: 1.2rem;
+        //     padding: 0;
+
+        // }
     }
 
     & > * {
