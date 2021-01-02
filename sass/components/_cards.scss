@@ -1,29 +1,94 @@
-.section__plans{
+.section__plans {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
 }
+
 .cards {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem;
     grid-template-rows: 1fr;
     justify-items: center;
     text-align: center;
-    
+
+    @include respond(tab-land) {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: auto;
+    }
+
+    @include respond(phone) {
+        margin: 7rem 0;
+        align-items: center;
+    }
+
 
     .card {
-        padding:0 3rem;
+        padding: 0 3rem;
         background-color: $color-light-gray;
         width: 35rem;
         height: 40.7rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        box-shadow: 1rem 1rem 1rem rgba($color-black,.3);
+        box-shadow: 1rem 1rem 1rem rgba($color-black, .3);
 
-        & > *{
+        @include respond(tab-land) {
+            // grid-column: 1/-1;
+            // display: flex;
+            flex-direction: row;
+            height: 30rem;
+            width: 50rem;
+        }
+
+        @include respond(phone) {
+            width: 35rem;
+            height: 40.7rem;
+            flex-direction: column;
+    
+        }
+
+        .card__text {
+
+            .heading__primary{
+                margin-bottom: 1rem;
+            }
+
+            @include respond(tab-land) {
+                text-align: left;
+                margin-left: -26rem;
+                padding: 1rem 2rem;
+            }
+
+            @include respond(phone) {
+                padding: 0 3rem;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        &>* {
             margin-bottom: 2.5rem;
+
+            @include respond(tab-land) {
+                margin-top: 3.5rem;
+                margin-bottom: 5rem;
+            }
+
+            @include respond(phone) {
+                margin-bottom: 2.5rem;
+                margin-top: 0;
+            }
+        }
+
+        .price {
+
+            @include respond(tab-land) {
+                // align-self: flex-start;
+            }
+
         }
 
         .btn {
@@ -33,6 +98,20 @@
             a {
                 text-decoration: none;
                 color: $color-white;
+                
+            }
+
+            @include respond(tab-land) {
+                order: -1;
+                align-self: flex-end;
+                padding: .5rem 10rem;
+                
+            }
+
+            @include respond(phone) {
+                align-self: center;
+                padding: 1.2rem 10rem;
+                order: 0;
             }
         }
 
@@ -45,6 +124,20 @@
             background-color: $color-black;
             color: $color-white;
             height: 47rem;
+
+            @include respond(tab-land) {
+
+                height: 30rem;
+                width: 50rem;
+            }
+
+            @include respond(phone) {
+                height: 47rem;
+                width: 35rem;
+
+
+            }
+        
 
             .btn {
 

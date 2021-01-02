@@ -50,6 +50,14 @@
 
 .pricing__body {
     display: grid;
-    grid-template-rows: 7.2rem 49rem 70rem 80rem 30rem 25rem;
+    grid-template-rows: 7.2rem 49rem 70rem 80rem repeat(2, min-content);
     grid-template-columns: repeat(6, 1fr);
+
+    @include respond(tab-land) {
+        grid-template-rows: 7.2rem 49rem 1fr 1fr repeat(2, min-content);
+    }
+
+    @include respond(phone) {
+        grid-template-rows: 7.2rem repeat(2, 30rem) 1fr 50rem repeat(2, min-content);
+    }
 }

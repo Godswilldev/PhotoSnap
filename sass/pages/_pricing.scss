@@ -1,33 +1,99 @@
-.pricing__body{
+.pricing__body {
 
 
-    .nav{
+    .nav {
         grid-column: 1/-1;
+        order: -6;
     }
 
-    .heading3{
-        grid-column:1/ span 2 ;
+    .heading3 {
+
+        grid-column: 1/ span 2;
         background-color: $color-black;
         color: $color-white;
 
-        p{
+        .heading__primary{
+
+            @include respond(tab-land) {
+               font-size: 2.5rem;
+            }
+
+            @include respond(phone) {
+                font-size: 4rem;
+             }
+            
+        }
+
+        p {
             line-height: 1.5;
-            letter-spacing: .3rem;
+            letter-spacing: .2rem;
+            
+            @include respond(tab-land) {
+                font-size: 1.3rem;
+                line-height: 1.2;
+            }
+
+            @include respond(phone) {
+                font-size: 1.5rem;
+                line-height: 1.5;
+             }
+        }
+
+        @include respond(tab-port) {
+            grid-column: 1/span 3;
+        }
+
+        @include respond(phone) {
+            grid-column: 1/-1;
+            order: -4;
         }
     }
 
-    .homePage__img3{
+    .homePage__img3 {
         grid-column: 3/-1;
+
+        @include respond(tab-port) {
+            grid-column: 4/-1;
+        }
+
+        @include respond(phone) {
+            grid-column: 1/-1;
+            order: -5;
+        }
     }
 
-    .section__plans{
+
+
+
+
+
+
+
+
+
+    .section__plans {
         grid-column: 1/-1;
     }
 
-    .section__compare{
+
+
+
+    .section__compare {
+
     }
 
-    .beta{
+
+
+
+
+
+
+
+
+
+
+
+    .beta {
         grid-column: 1/-1;
         color: $color-white;
         background-image: url(../assets/shared/desktop/bg-beta.jpg);
@@ -37,10 +103,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 5rem;
+        padding: 5rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 
-    .footer{
+    .footer {
         grid-column: 1/-1;
     }
 }
