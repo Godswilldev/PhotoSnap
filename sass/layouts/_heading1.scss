@@ -2,19 +2,23 @@
     background-color: $color-black;
     grid-column: 1/6;
 
-    .heading__primary{
+    .heading__primary {
+
         // margin-bottom: 2rem;
-        @include respond(tab-land){
+        @include respond(tab-land) {
             margin-bottom: 1rem;
+            font-size: 2rem;
         }
     }
 
-    .arrow__button{
+    .arrow__button {
         margin-top: 2rem;
-        @include respond(tab-land){
+
+        @include respond(tab-land) {
             margin-top: 1rem;
         }
-        svg{
+
+        svg {
             margin-left: 1rem;
         }
     }
@@ -31,15 +35,22 @@
 
         }
 
-        @include respond(tab-land){
-            padding: 0 1rem;
+        p {
+            @include respond(tab-land) {
+                font-size: 1.2rem;
+            }
         }
 
-        @include respond(tab-port){
+        @include respond(tab-land) {
+            padding: 0 1rem;
+
+        }
+
+        @include respond(tab-port) {
             padding: 0 3rem;
         }
 
-        @include respond(phone){
+        @include respond(phone) {
             padding: 0 3rem;
         }
     }
@@ -47,6 +58,7 @@
 
     @include respond(land) {
         grid-column: 1/8;
+
     }
 
     @include respond(tab-port) {
@@ -74,19 +86,23 @@
     // background-color: greenyellow;
     grid-column: 8/-1;
 
-    .heading__primary{
+    .heading__primary {
         margin-bottom: 2rem;
-        @include respond(tab-land){
+
+        @include respond(tab-land) {
             margin-bottom: .5rem;
+            font-size: 2rem;
         }
     }
 
-    .arrow__button{
+    .arrow__button {
         margin-top: 2rem;
-        @include respond(tab-land){
+
+        @include respond(tab-land) {
             margin-top: 1rem;
         }
-        svg{
+
+        svg {
             margin-left: 1rem;
         }
     }
@@ -98,23 +114,32 @@
         align-items: center;
         padding: 0 8rem;
 
+        p {
+            @include respond(tab-land) {
+                font-size: 1.2rem;
+            }
+        }
 
         .btn {
             color: $color-black;
         }
-        @include respond(tab-land){
+
+        @include respond(tab-land) {
             padding: 0 1rem;
         }
-        @include respond(tab-port){
+
+        @include respond(tab-port) {
             padding: 0 3rem;
         }
-        @include respond(phone){
+
+        @include respond(phone) {
             padding: 0 3rem;
         }
     }
 
     @include respond(land) {
         grid-column: 6/-1;
+
     }
 
     @include respond(tab-port) {
@@ -142,20 +167,29 @@
     // background-color: red;
     grid-column: 1/6;
 
-    .heading__primary{
-        margin-bottom: 2rem;
-
-        @include respond(tab-land){
-            margin-bottom: .5rem;
+    p {
+        @include respond(tab-land) {
+            font-size: 1.2rem;
         }
     }
 
-    .arrow__button{
+    .heading__primary {
+        margin-bottom: 2rem;
+
+        @include respond(tab-land) {
+            margin-bottom: .5rem;
+            font-size: 2rem;
+        }
+    }
+
+    .arrow__button {
         margin-top: 2rem;
-        @include respond(tab-land){
+
+        @include respond(tab-land) {
             margin-top: 1rem;
         }
-        svg{
+
+        svg {
             margin-left: 1rem;
         }
     }

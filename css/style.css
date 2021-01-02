@@ -601,7 +601,8 @@ body {
   grid-column: 1/6; }
   @media only screen and (max-width: 75em) {
     .heading1 .heading__primary {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      font-size: 2rem; } }
   .heading1 .arrow__button {
     margin-top: 2rem; }
     @media only screen and (max-width: 75em) {
@@ -617,6 +618,9 @@ body {
     padding: 0 8rem; }
     .heading1__text .btn {
       color: #fff; }
+    @media only screen and (max-width: 75em) {
+      .heading1__text p {
+        font-size: 1.2rem; } }
     @media only screen and (max-width: 75em) {
       .heading1__text {
         padding: 0 1rem; } }
@@ -640,7 +644,8 @@ body {
     margin-bottom: 2rem; }
     @media only screen and (max-width: 75em) {
       .heading2 .heading__primary {
-        margin-bottom: .5rem; } }
+        margin-bottom: .5rem;
+        font-size: 2rem; } }
   .heading2 .arrow__button {
     margin-top: 2rem; }
     @media only screen and (max-width: 75em) {
@@ -654,6 +659,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 8rem; }
+    @media only screen and (max-width: 75em) {
+      .heading2__text p {
+        font-size: 1.2rem; } }
     .heading2__text .btn {
       color: #000; }
     @media only screen and (max-width: 75em) {
@@ -675,11 +683,15 @@ body {
 
 .heading3 {
   grid-column: 1/6; }
+  @media only screen and (max-width: 75em) {
+    .heading3 p {
+      font-size: 1.2rem; } }
   .heading3 .heading__primary {
     margin-bottom: 2rem; }
     @media only screen and (max-width: 75em) {
       .heading3 .heading__primary {
-        margin-bottom: .5rem; } }
+        margin-bottom: .5rem;
+        font-size: 2rem; } }
   .heading3 .arrow__button {
     margin-top: 2rem; }
     @media only screen and (max-width: 75em) {
