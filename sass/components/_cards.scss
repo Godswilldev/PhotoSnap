@@ -14,13 +14,14 @@
     text-align: center;
 
     @include respond(tab-land) {
+        margin-top: 7rem;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: auto;
     }
 
     @include respond(phone) {
-        margin: 7rem 0;
+        margin-bottom: 7rem;
         align-items: center;
     }
 

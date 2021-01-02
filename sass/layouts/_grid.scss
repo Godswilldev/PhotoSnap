@@ -58,6 +58,6 @@
     }
 
     @include respond(phone) {
-        grid-template-rows: 7.2rem repeat(2, 30rem) 1fr 50rem repeat(2, min-content);
+        grid-template-rows: 7.2rem repeat(2, 30rem) 1fr min-content min-content;
     }
 }
